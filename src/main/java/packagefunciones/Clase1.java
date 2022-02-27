@@ -4,6 +4,8 @@
  */
 package packagefunciones;
 
+import java.util.Scanner;
+
 /**
  *
  * @author Ambiente
@@ -29,7 +31,7 @@ public class Clase1 {
     return notas;
     }
     
-    static float Sacarpromedio(float nota [][]){
+    static float Sacarpromedio(float nota[][]){
         float suma=(float)0.0;
         float promedio =(float)0.0;
         int c=0;
@@ -64,5 +66,47 @@ public class Clase1 {
     if((nota[i][2]==3.0)&&(nota[i][3]<=2.5)){
         historia=historia+1;
     }
+    }
+    
+    if((quimica>idioma && quimica>historia)||(quimica==idioma && quimica>historia)||(quimica==historia && quimica>idioma)){
+        System.out.println("quimica");
+    }
+    else if((idioma>quimica && idioma>historia)||(idioma==historia && idioma>quimica)){
+        System.out.println("idiomas");    
+    }
+    else if((historia>quimica)&&(historia>idioma)){
+        System.out.println("historia");    
+    }
+}
+    static void Estmayordesquimica(float nota[][]){
+        float mejor=0;
+        float estudiante=0;
+        for (int i=0; i<nota.length;i++){
+            if((nota[i][2]==1.0)&&(nota[i][3]>mejor)){
+                mejor=nota[i][3];
+                estudiante=nota[i][0];
+            }
+        }
+        if(estudiante==1.0){
+            System.out.println("Armando");
+        }else{
+            if(estudiante==2.0){
+                System.out.println("Nicolas");
+            }else{
+                if(estudiante==3.0){
+                    System.out.println("Daniel");
+                }else{
+                    if(estudiante==4.0){
+                        System.out.println("María");
+                    }else{
+                        if(estudiante==5.0){
+                            System.out.println("Marcela");
+                        }else{
+                            System.out.println("Alexandra");
+                        }
+                    }
+                }
+            }
+        }
     }
 }
