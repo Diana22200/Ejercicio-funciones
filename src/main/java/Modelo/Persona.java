@@ -9,24 +9,52 @@ package Modelo;
  * @author Ambiente
  */
 public class Persona {
-    public int id;
-    public float genero;
+    private float Genero;
+    private String Nombre;
+    private String Apellido;
+    private int Edad;
+    private String Correo;
      
-    public Persona(float genero ){
-    this.genero=genero;
+    public Persona(float Genero){
+        this.Genero=Genero;
     } 
+    
     public float getGenero(){
-    return genero;
+        return Genero;
     }
+    
     public void setGenero(float genero){
-    this.genero=genero;
-    }
-    public int getId(){
-    return id;
-    }
-    public void setId(int id){
-        this.id=id;
+        this.Genero=Genero;
     }
     
+    public String getNombre(){
+        return Nombre;
+    }
+    public void setNombre(String Nombre){
+        this.Nombre=Nombre;
+    }
     
+    public String getApellido() {
+        return Apellido;
+    }
+    
+    public void setApellido(String Apellido) {
+        this.Apellido=Apellido;
+    }
+    
+    public int getEdad() {
+        return Edad;
+    }
+    
+    public void setEdad(int Edad) {
+        this.Edad=Edad;
+    }
+    
+    public String getCorreo() {
+        return Correo;
+    }
+    
+    public void setCorreo(String Correo) {
+        this.Correo=Correo;
+    }
 }
