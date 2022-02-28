@@ -3,7 +3,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
  */
 package packagefunciones;
-
+import java.util.Scanner;
 /**
  *
  * @author Ambiente
@@ -16,7 +16,8 @@ public class Prueba1 {
     public static void main(String[] args) {
         // TODO code application logic here
         Scanner datos;
-        datos=new  Scaner(System.in);
+        datos=new  Scanner(System.in);
+        
         int cantidad=datos.nextInt();
         float notas[][]=new float[cantidad][4];
         float suma=(float)0.0;
@@ -34,15 +35,16 @@ public class Prueba1 {
         }
         }
         promedio=suma/cantidad;
+        
         int mayor=0;
         int regular=0;
         for(int i=0; i<notas.length;i++){
-        if(notas[i][3]>promedio){
-            mayor=mayor+1;
-        }
-            if((notas[i][3]>2.5) && (notas[i][3]<=3.5.5)){
-            regular=regular+1;
-        }
+            if(notas[i][3]>promedio){
+               mayor=mayor+1;
+            }
+            if((notas[i][3]>2.5) && (notas[i][3]<=3.5)){
+              regular=regular+1;
+            }
         }
         System.out.println(mayor);
         System.out.println(regular);
@@ -68,9 +70,9 @@ public class Prueba1 {
         }else if ((historia>quimica)&&(historia>idioma)){
             System.out.println("historia");
         }
-    }       float mejor=0;
+           float mejor=0;
             float estudiante=0;
-            for(int i=0;i<notas.length;i++){
+            for(int i=0 ;i < notas.length ;i++){
                 if((notas[i][2]==1.0)&&(notas[i][3]>mejor)){
                         mejor=notas[i][3];
                         estudiante=notas[i][0];
@@ -87,8 +89,8 @@ public class Prueba1 {
                     }else{
                         if(estudiante==4.0){
                         System.out.println("María");
-                    }else{
-                            ifestudiante==5.0){
+                        }else{
+                            if(estudiante==5.0){
                             System.out.println("Marcela");
                             }else{
                                 System.out.println("Alexandra");
@@ -96,7 +98,8 @@ public class Prueba1 {
                         }
                     }
                 }
+            }
         datos.close(); 
                         
-            }
+    }
 }
