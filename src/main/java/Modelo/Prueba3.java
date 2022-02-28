@@ -57,6 +57,9 @@ public class Prueba3 {
         int idioma=0;
         int historia=0;
         for(int i=0; i<cantidad; i++) {
+            if((estudiantes[i].materia==1.0) && (estudiantes[i].nota<=2.5)) {
+                quimica=quimica+1;
+            }
             if((estudiantes[i].materia==2.0) && (estudiantes[i].nota<=2.5)) {
                 idioma=idioma+1;
             }

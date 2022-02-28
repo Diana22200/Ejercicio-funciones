@@ -16,7 +16,7 @@ public class Prueba1 {
     public static void main(String[] args) {
         // TODO code application logic here
         Scanner datos;
-        datos=new  Scanner(System.in);
+        datos=new Scanner(System.in);
         
         int cantidad=datos.nextInt();
         float notas[][]=new float[cantidad][4];
@@ -25,7 +25,7 @@ public class Prueba1 {
         datos.nextLine(); 
         for(int i=0; i<cantidad; i++){
         String informacion=datos.nextLine();
-        String lista []=informacion.split("");
+        String lista []=informacion.split(" ");
         for(int j=0;j<lista.length;j++){
         String info=lista[j];
         notas[i][j]=Float.parseFloat(info);

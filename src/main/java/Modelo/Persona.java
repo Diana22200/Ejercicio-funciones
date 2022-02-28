@@ -9,22 +9,22 @@ package Modelo;
  * @author Ambiente
  */
 public class Persona {
-    private float Genero;
+    private float genero;
     private String Nombre;
-    private String Apellido;
-    private int Edad;
-    private String Correo;
+    private String apellido;
+    private int edad;
+    private String correo;
      
-    public Persona(float Genero){
-        this.Genero=Genero;
+    public Persona(float genero){
+        this.genero=genero;
     } 
     
     public float getGenero(){
-        return Genero;
+        return genero;
     }
     
     public void setGenero(float genero){
-        this.Genero=Genero;
+        this.genero=genero;
     }
     
     public String getNombre(){
@@ -35,26 +35,26 @@ public class Persona {
     }
     
     public String getApellido() {
-        return Apellido;
+        return apellido;
     }
     
-    public void setApellido(String Apellido) {
-        this.Apellido=Apellido;
+    public void setApellido(String apellido) {
+        this.apellido=apellido;
     }
     
     public int getEdad() {
-        return Edad;
+        return edad;
     }
     
-    public void setEdad(int Edad) {
-        this.Edad=Edad;
+    public void setEdad(int edad) {
+        this.edad=edad;
     }
     
     public String getCorreo() {
-        return Correo;
+        return correo;
     }
     
-    public void setCorreo(String Correo) {
-        this.Correo=Correo;
+    public void setCorreo(String correo) {
+        this.correo=correo;
     }
 }

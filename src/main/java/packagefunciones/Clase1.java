@@ -22,7 +22,7 @@ public class Clase1 {
     datos.nextLine();
     for(int i=0;i<cantidad;i++){
         String informacion=datos.nextLine();
-        String lista[]=informacion.split("");
+        String lista[]=informacion.split(" ");
         for(int j=0;j<lista.length;j++){
             String info=lista[j];
             notas[i][j]=Float.parseFloat(info);
@@ -42,6 +42,7 @@ public class Clase1 {
         promedio=suma/c;
         return promedio;
     }
+    
     static void calmaypromycantexamregul(float nota[][],float promedio){
         int mayor=0;
         int regular=0;
