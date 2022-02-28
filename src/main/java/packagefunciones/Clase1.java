@@ -57,15 +57,19 @@ public class Clase1 {
         System.out.println(regular);
     }
     static void Matexamreprobados(float nota[][]){
-    if((nota[i][2]==1.0)&&(nota[i][3]<=2.5)){
-        quimica=quimica+1;
-    }
-    if((nota[i][2]==2.0)&&(nota[i][3]<=2.5)){
-        idioma=idioma+1;
-    }
-    if((nota[i][2]==3.0)&&(nota[i][3]<=2.5)){
-        historia=historia+1;
-    }
+    int quimica=0;
+    int idioma=0;
+    int historia=0;
+    for(int i=0; i<nota.length;i++){
+        if((nota[i][2]==1.0)&&(nota[i][3]<=2.5)){
+            quimica=quimica+1;
+        }
+        if((nota[i][2]==2.0)&&(nota[i][3]<=2.5)){
+            idioma=idioma+1;
+        }
+        if((nota[i][2]==3.0)&&(nota[i][3]<=2.5)){
+            historia=historia+1;
+        }
     }
     
     if((quimica>idioma && quimica>historia)||(quimica==idioma && quimica>historia)||(quimica==historia && quimica>idioma)){

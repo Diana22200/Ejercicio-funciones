@@ -13,6 +13,7 @@ import static packagefunciones.Clase1.Llenarmatriz;
 import static packagefunciones.Clase1.Matexamreprobados;
 import static packagefunciones.Clase1.Sacarpromedio;
 import static packagefunciones.Clase1.calmaypromycantexamregul;
+import static packagefunciones.Clase1.Estmayordesquimica;
 public class Prueba2 {
 
     /**
